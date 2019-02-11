@@ -9,6 +9,22 @@
 
 <hr>
 
+
+<form method="post" action="/index"  id="db_post" name="db_upload" enctype="multipart/form-data">
+
+    {{ fileForm.hidden_tag() }}
+
+        <p>
+            Upload a .csv file containing the book suggestions here!
+            {{fileForm.filePath()}}
+         </p>
+
+    <div align="center"><button type="submit" value="Submit" class="btn btn-primary">Submit</button></p></div>
+
+</form>
+
+<hr>
+
 <form method="post" action="/index"  id="db_post" name="db_post">
 
     {{ form1.hidden_tag() }} 
